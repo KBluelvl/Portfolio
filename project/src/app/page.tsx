@@ -11,7 +11,7 @@ export default function Home() {
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/projects">Projects</Link></li>
                 <li><Link href="/about">About</Link></li>
-                <li><Link href="https://github.com/KBluelvl/Portofolio" target="_blank">code</Link></li>
+                <li><Link href="https://github.com/KBluelvl/Portfolio" target="_blank">code</Link></li>
                 <li>Language</li>
               </ul>
             </div>
