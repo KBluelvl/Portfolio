@@ -17,8 +17,11 @@ export default function Home() {
               <Image src="/image/linkedin.jpg" width={45} height={45} className="rounded-full"  alt="github logo" />
             </Link>
           </div>
-
-          <h1 className="text-2xl sm:text-1xl font-semibold">Skills</h1>
+          <h1 className="text-2xl sm:text-1xl font-semibold mt-20">Skills</h1>
+          <div className="inline-block border rounded-lg border-transparent bg-zinc-900 px-10">
+              <Image src="/image/java-icon.svg" width="32" height="32" alt="github logo" />
+              <p className="text-center">Java</p>
+          </div>
       </main>
       <footer></footer>
       </>
