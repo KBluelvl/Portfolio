@@ -18,12 +18,49 @@ export default function Home() {
             </Link>
           </div>
           <h1 className="text-2xl sm:text-1xl font-semibold mt-20">Skills</h1>
-          <div className="inline-block border rounded-lg border-transparent bg-zinc-900 px-10">
-              <Image src="/image/java-icon.svg" width="32" height="32" alt="github logo" />
+          <div className="grid grid-cols-5">
+            <div>
+              <Image src="/image/icon/java.svg" width="32" height="32" className="mx-auto" alt="github logo"/>
               <p className="text-center">Java</p>
+            </div>
+            <div>
+              <Image src="/image/icon/javascript.svg" width="32" height="32" className="mx-auto" alt="github logo" />
+              <p className="text-center">Javascript</p>
+            </div>
+            <div>
+              <Image src="/image/icon/cpp.svg" width="32" height="32" className="mx-auto" alt="github logo" />
+              <p className="text-center">C++</p>
+            </div>
+            <div>
+              <Image src="/image/icon/c.svg" width="32" height="32" className="mx-auto" alt="github logo" />
+              <p className="text-center">C</p>
+            </div>
+            <div>
+              <Image src="/image/icon/laravel.svg" width="32" height="32" className="mx-auto" alt="github logo" />
+              <p className="text-center">Laravel</p>
+            </div>
+            <div>
+              <Image src="/image/icon/android.svg" width="32" height="32" className="mx-auto" alt="github logo" />
+              <p className="text-center">Android Studio</p>
+            </div>
+            <div>
+              <Image src="/image/icon/django.svg" width="32" height="32" className="mx-auto" alt="github logo" />
+              <p className="text-center">Django</p>
+            </div>
+            <div>
+              <Image src="/image/icon/spring.svg" width="32" height="32" className="mx-auto" alt="github logo" />
+              <p className="text-center">Spring</p>
+            </div>
+            <div>
+              <Image src="/image/icon/next-js.svg" width="32" height="32" className="mx-auto" alt="github logo" />
+              <p className="text-center">Next JS</p>
+            </div>
+            <div>
+              <Image src="/image/icon/typescript.svg" width="32" height="32" className="mx-auto" alt="github logo" />
+              <p className="text-center">Typescript</p>
+            </div>
           </div>
       </main>
-      <footer></footer>
       </>
   )
 }

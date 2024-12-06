@@ -45,6 +45,7 @@ export default function RootLayout({
         <div className="container mt-24 px-12">
           {children}
         </div>
+        <footer></footer>
       </body>
     </html>
   );
