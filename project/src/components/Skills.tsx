@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Skills() {
     return (<>
-        <h1 className="text-2xl sm:text-1xl font-semibold m-20 text-center">Skills</h1>
-          <div className="grid grid-cols-5 space-y-10">
+        <h1 className="text-2xl sm:text-1xl font-semibold mt-20 mb-20 text-center">Skills</h1>
+          <div className="grid grid-cols-5 gap-10">
             <div>
               <Image src="/image/icon/java.svg" width="32" height="32" className="mx-auto" alt="Java logo"/>
               <p className="text-center">Java</p>
