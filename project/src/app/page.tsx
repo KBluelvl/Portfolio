@@ -19,6 +19,7 @@ export default function Home() {
             </Link>
           </div>
           <Skills />
+          <h1 className="text-2xl sm:text-1xl font-semibold mt-20 mb-20 text-center">Projects</h1>
           <Projects />
       </>
   )
