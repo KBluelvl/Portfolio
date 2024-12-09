@@ -11,6 +11,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --header: #0a0a0a;
   }
 }
 
@@ -18,6 +19,7 @@
   :root {
     --background: #f0f4f8;
     --foreground: #000000;
+    --header: #b5caf2;
   }
 }
 
@@ -25,4 +27,8 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: var(--header);
 }
