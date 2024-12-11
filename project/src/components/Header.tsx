@@ -11,7 +11,6 @@ export default function Header(){
                   <li className="flex items-center"><Link href="/">Home</Link></li>
                   <li className="flex items-center"><Link href="/projects">Projects</Link></li>
                   <li className="flex items-center"><Link href="/about">About</Link></li>
-                  <li className="flex items-center"><Link href="https://github.com/KBluelvl/Portfolio" target="_blank">Code</Link></li>
                 </ul>
             </div>
           </nav>
