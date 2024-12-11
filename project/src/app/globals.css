@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --hoverIcon: #374151;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,6 +14,7 @@
     --foreground: #ededed;
     --header: #0a0a0a;
     --backgroundFlagName: #403938;
+    --hoverIcon: #374151;
   }
 }
 
@@ -22,6 +24,7 @@
     --foreground: #000000;
     --header: #b5caf2;
     --backgroundFlagName: #b8cfffe4;
+    --hoverIcon: #b5caf2;
   }
 }
 
@@ -41,4 +44,8 @@ header * {
 
 .flagName {
   background-color: var(--backgroundFlagName);
+}
+
+.hover\:bg-hoverIcon:hover {
+  background-color: var(--hoverIcon);
 }
