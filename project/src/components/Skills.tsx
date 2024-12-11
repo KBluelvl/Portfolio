@@ -10,7 +10,7 @@ export default function Skills() {
             </div>
             <div className="hover:bg-gray-700">
               <Image src="/image/icon/javascript.svg" width="32" height="32" className="mx-auto" alt="Javascript logo"/>
-              <p className="text-center max-w-[450px]:text-xs">Javascript</p>
+              <p className="text-center text-xs">Javascript</p>
             </div>
             <div className="hover:bg-gray-700">
               <Image src="/image/icon/cpp.svg" width="32" height="32" className="mx-auto" alt="C++ logo"/>
