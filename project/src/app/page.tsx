@@ -23,7 +23,7 @@ export default function Home() {
               <Image src="/image/linkedin.jpg" width={45} height={45} className="rounded-full"  alt="Linkedin logo" />
             </Link>
             <div className="flex flex-col">
-              <Image src="/image/belgium-flag.png" width={50} height={45} className="border rounded" alt="Belgium flag"
+              <Image src="/image/belgium-flag.png" width={50} height={45} className="border rounded-sm mt-2 border-slate-800" alt="Belgium flag"
                 onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)}/>
                 {!isVisible && (<div className="hiddenFlagName">Belgium</div>)}
                 {isVisible && (<div className="flagName rounded">Belgium</div>)}
