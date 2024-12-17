@@ -15,22 +15,25 @@ export default function Home() {
             <div className="tracking-tight">Florian Essomba</div>
           </h1>
           <p className="md:text-2xl">Student in Application developpement</p>
-          <div className="flex space-x-4 mt-1">
-            <Link href="https://github.com/KBluelvl">
-              <Image src="/image/github.jpg" width={45} height={45} className="rounded-full"  alt="GitHub logo" />
-            </Link>
-            <Link href="https://www.linkedin.com/in/florian-essomba-804b1b216/">
-              <Image src="/image/linkedin.jpg" width={45} height={45} className="rounded-full"  alt="Linkedin logo" />
-            </Link>
+          <div className="flex space-x-4 mt-1 items-center">
             <div className="flex flex-col">
-              <Image src="/image/belgium-flag.png" width={50} height={45} className="border rounded-sm mt-2 border-slate-800" alt="Belgium flag"
+              <Image src="/image/belgium-flag.png" width={50} height={45} className="border rounded-sm mt-1 border-slate-800" alt="Belgium flag"
                 onMouseEnter={() => setVisible(true)} onMouseLeave={() => setVisible(false)}/>
                 {!isVisible && (<div className="hiddenFlagName">Belgium</div>)}
                 {isVisible && (<div className="flagName rounded">Belgium</div>)}
-             </div>
+            </div>
+            <Link href="https://github.com/KBluelvl">
+              <Image src="/image/github.jpg" width={45} height={45} className="rounded-full mb-5"  alt="GitHub logo" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/florian-essomba-804b1b216/">
+              <Image src="/image/linkedin.jpg" width={45} height={45} className="rounded-full mb-5"  alt="Linkedin logo" />
+            </Link>
+            <a href="image/cv/Resume Florian.pdf" className="border-4 rounded-3xl transition-colors duration-300 border-blue-400 hover:bg-blue-400 py-2 px-3 mb-5" download>
+              <p>Download CV</p>
+            </a>
           </div>
           <Skills />
-          <h1 className="text-2xl sm:text-1xl font-semibold mt-20 mb-20 text-center">Projects</h1>
+          <h1 className="text-2xl sm:text-1xl font-semibold mt-20 mb-10 text-center">Projects</h1>
           <Projects />
       </>
   )
