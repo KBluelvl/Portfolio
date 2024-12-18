@@ -1,7 +1,7 @@
 import projects from '@/data/projects';
 import ProjectCard from "@/components/ProjectCard";
 
-export default function tag({params}) {
+export default async function tag({params}) {
     const filteredProjects = projects.filter((project) => 
         project.tags.includes(params.tag)
     );
