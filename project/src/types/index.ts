@@ -11,3 +11,7 @@ export type Project = {
 export type ProjectCardType = {
     project: Project;
 };
+
+export type Params = {
+    tag: string;
+};
