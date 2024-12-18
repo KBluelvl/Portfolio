@@ -1,14 +1,11 @@
 import projects from '@/data/projects';
 import ProjectCard from "@/components/ProjectCard";
 
-interface PageProps {
-    params: {
-      tag: string;
-    };
-}
-
-export default function tag({params}: PageProps) {
-    const filteredProjects = projects.filter((project) => project.tags.includes(params.tag))
+export default function tag({params}: { params: { tag: string } }) {
+    const filteredProjects = projects.filter((project) => 
+        project.tags.includes(params.tag)
+    );
+    
     return (
          <div className="flex flex-col items-center">
             <h1 className="text-3xl">Projects built with <b>{params.tag}</b></h1>
