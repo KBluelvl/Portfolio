@@ -7,3 +7,7 @@ export type Project = {
     website?: string;
     tags: string[];
 };
+
+export type ProjectCardType = {
+    project: Project;
+};
