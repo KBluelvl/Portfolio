@@ -9,6 +9,7 @@ export default function Footer() {
                 <p className="mr-5">This site was made with Tailwind CSS.</p>
                 <Image src="/image/icon/tailwind-css.svg" width="32" height="32" alt="Tailwind logo" />
             </div>
+            <p>All rights reserved.</p>
         </footer>
     );
 }

@@ -28,8 +28,8 @@ export default function Home() {
             <Link href="https://www.linkedin.com/in/florian-essomba-804b1b216/">
               <Image src="/image/linkedin.jpg" width={45} height={45} className="rounded-full mb-5"  alt="Linkedin logo" />
             </Link>
-            <a href="image/cv/Resume Florian.pdf" className="border-4 rounded-3xl transition-colors duration-300 border-blue-400 hover:bg-blue-400 py-2 px-3 mb-5" download>
-              <p>Download CV</p>
+            <a href="image/cv/Resume Florian.pdf" className="rounded-3xl bg-gradient-to-r from-[#0454c4] to-[#53abf5] transition ease-out hover:scale-110 p-1 mb-5" download>
+              <p className="rounded-3xl bg-background hover:bg-gradient-to-r from-[#0454c4] to-[#53abf5] px-3 py-2">Download CV</p>
             </a>
           </div>
           <Skills />

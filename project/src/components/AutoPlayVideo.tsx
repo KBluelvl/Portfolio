@@ -60,6 +60,7 @@ const AutoPlayVideo: React.FC = () => {
         height={360}
         muted
         style={{ display: 'block', margin: 'auto' }}
+        className="transition ease-out hover:scale-110"
       ></video>
     </div>
   );
