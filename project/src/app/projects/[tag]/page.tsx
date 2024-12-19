@@ -4,6 +4,7 @@ import ProjectCard from "@/components/ProjectCard";
 type Params = Promise<{ tag: string }>
 
 export async function generateMetadata({params} : {params: Params}) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { tag } = await params
 }
 
