@@ -8,9 +8,15 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const sendEmail  = async () => {
-      await fetch(`/api/send?email=${encodeURIComponent(email)}&subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`);
-  };
+    try {
+        setLoading(true);
+        await fetch(`/api/send?email=${encodeURIComponent(email)}&subject=${encodeURIComponent(subject)}&message=${encodeURIComponent(message)}`);
+    } finally {
+        setLoading(false);
+    }
+    };
 
     return (<>
         <div className="grid md:grid-cols-2 my-12">
@@ -47,7 +53,7 @@ export default function Contact() {
                   onChange={(e) => setMessage(e.target.value)} 
                   className="text-sm bg-[#18191E] rounded-md border border-gray-800 mb-6 p-2" 
                   placeholder="Write your message here..." />
-                <button className="bg-blue-800 rounded-md py-2" onClick={sendEmail}>Send Message</button>
+                <button className="bg-blue-800 rounded-md py-2" onClick={sendEmail}>{loading ? "Sending..." : "Send Message"}</button>
             </div>
         </div>
         </>);

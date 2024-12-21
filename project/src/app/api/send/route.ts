@@ -18,7 +18,7 @@ export async function GET(request: Request) {
 
   try {
     const { data } = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: 'portfolio@resend.dev',
       to: '58137@etu.he2b.be',
       subject: subject,
       html: `<p>mail de : ${email}</p><p>${message}</p>`,
