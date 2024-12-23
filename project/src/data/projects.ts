@@ -7,7 +7,7 @@ const projects: Project[] = [
         desc: "Calculates the fastest routes in the Brussels metro system STIB.",
         image: "/image/projects/STIB.png",
         github: "https://github.com/KBluelvl/STIB",
-        tags: ["Java", "JavaFX", "SQL", "Dijkstra's algorithm"],
+        tags: ["Java", "JavaFX", "SQL", "Dijkstra algorithm"],
     },
     {
         id: 1,
