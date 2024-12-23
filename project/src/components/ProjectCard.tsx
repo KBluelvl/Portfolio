@@ -22,7 +22,7 @@ export default function ProjectCard({project}: ProjectCardType) {
                 <div className="flex space-x-2">
                     {project.tags.map((tag: string) => {
                         return (
-                            <h1 className="border rounded-md border-none px-1 bg-slate-700 hover:bg-slate-800" key={tag}>
+                            <h1 className="border rounded-md border-none px-1 bg-slate-700 hover:bg-slate-800 max-[640px]:text-xs" key={tag}>
                                 <a href={`/projects/${tag}`} className="hover:text-gray-300">{tag}</a>
                             </h1>
                         )
