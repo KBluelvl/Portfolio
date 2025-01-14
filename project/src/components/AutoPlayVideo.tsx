@@ -56,8 +56,8 @@ const AutoPlayVideo: React.FC = () => {
       <video
         ref={videoRef}
         src="/Chess.mp4"
-        width={640}
-        height={360}
+        width={597}
+        height={298}
         muted
         style={{ display: 'block', margin: 'auto' }}
         className="transition ease-out hover:scale-110"
