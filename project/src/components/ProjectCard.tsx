@@ -30,21 +30,21 @@ export default function ProjectCard({project}: ProjectCardType) {
                 </div>
                 <div className="flex space-x-3">
                     <Link href={project.github} target="_blank">
-                        <h1 className="flex items-center space-x-2 border rounded-md px-1">
+                        <div className="linkButton flex items-center space-x-2 border rounded-md px-1">
                             <p>Code</p>
                             <FontAwesomeIcon icon={faCode} className="fa-fw" />
-                        </h1>
+                        </div>
                     </Link>
                     { project.website 
                     ? <Link href={project.website} target="_blank">
-                        <h1 className="flex items-center space-x-2 border rounded-md px-1">
+                        <div className="linkButton flex items-center space-x-2 border rounded-md px-1">
                             <p>Website</p>
                             <FontAwesomeIcon icon={faGlobe} className="fa-fw" />
-                        </h1>
+                        </div>
                         </Link>
                     :null}
                 </div>
-                <p className="text-center text-gray-400">{project.desc}</p>
+                <p className="descriptionText text-center">{project.desc}</p>
             </div>
         </>)
 }
