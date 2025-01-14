@@ -22,6 +22,7 @@
     --textColor: white;
     --h2Color: #4361a3;
     --borderListColor: #e5e7eb;
+    --tagColor: #ffffff;
   }
 }
 
@@ -36,6 +37,7 @@
     --textColor: black;
     --h2Color: #111827;
     --borderListColor: #000;
+    --tagColor: #ffffff;
   }
 }
 
@@ -53,16 +55,8 @@ header * {
   color: var(--background);
 }
 
-.flagName {
-  background-color: var(--backgroundFlagName);
-}
-
 .hover\:bg-hoverIcon:hover {
   background-color: var(--hoverIconColor);
-}
-
-.nextIcon {
-  fill: var(--nextjsIcon);
 }
 
 time {
@@ -73,6 +67,18 @@ h2 {
   color: var(--h2Color);
 }
 
+.nextIcon {
+  fill: var(--nextjsIcon);
+}
+
 .educationList {
   border-color: var(--borderListColor);
+}
+
+.flagName {
+  background-color: var(--backgroundFlagName);
+}
+
+.tag {
+  color: var(--tagColor);
 }
