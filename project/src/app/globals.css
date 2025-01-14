@@ -6,6 +6,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --hoverIcon: #374151;
+  --textColor: #171717;
+  --h2Color: #111827;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +18,8 @@
     --backgroundFlagName: #403938;
     --hoverIcon: #374151;
     --nextjsIcon: #ffffff;
+    --textColor: white;
+    --h2Color: #4361a3;
   }
 }
 
@@ -27,6 +31,8 @@
     --backgroundFlagName: #b8cfffe4;
     --hoverIcon: #b5caf2;
     --nextjsIcon: #0a0a0a;
+    --textColor: black;
+    --h2Color: #111827;
   }
 }
 
@@ -54,4 +60,12 @@ header * {
 
 .nextIcon {
   fill: var(--nextjsIcon);
+}
+
+time {
+  color: var(--textColor);
+}
+
+h2 { 
+  color: var(--h2Color);
 }

@@ -38,7 +38,6 @@ export default function Home() {
           <Educations />
           <h1 className="text-2xl sm:text-1xl font-semibold mt-20 mb-10 text-center">Projects</h1>
           <Projects />
-          
       </>
   )
 }
