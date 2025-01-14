@@ -8,18 +8,20 @@
   --hoverIcon: #374151;
   --textColor: #171717;
   --h2Color: #111827;
+  --borderListColor: #000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --header: #0a0a0a;
+    --header: #1B1F23;
     --backgroundFlagName: #403938;
-    --hoverIcon: #374151;
+    --hoverIconColor: #374151;
     --nextjsIcon: #ffffff;
     --textColor: white;
     --h2Color: #4361a3;
+    --borderListColor: #e5e7eb;
   }
 }
 
@@ -27,12 +29,13 @@
   :root {
     --background: #f0f4f8;
     --foreground: #000000;
-    --header: #b5caf2;
-    --backgroundFlagName: #b8cfffe4;
-    --hoverIcon: #b5caf2;
+    --header: #ffffff;
+    --backgroundFlagName: #b5caf2;
+    --hoverIconColor: #b5caf2;
     --nextjsIcon: #0a0a0a;
     --textColor: black;
     --h2Color: #111827;
+    --borderListColor: #000;
   }
 }
 
@@ -55,7 +58,7 @@ header * {
 }
 
 .hover\:bg-hoverIcon:hover {
-  background-color: var(--hoverIcon);
+  background-color: var(--hoverIconColor);
 }
 
 .nextIcon {
@@ -68,4 +71,8 @@ time {
 
 h2 { 
   color: var(--h2Color);
+}
+
+.educationList {
+  border-color: var(--borderListColor);
 }
