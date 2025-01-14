@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function EducationPage(){
     return (<>
         <div className="flex justify-center">
-            <ol className="relative border-s educationList">                  
+            <ol className="relative border-s educationList -z-10">                  
                 <li className="mb-16 ms-10 mt-4">
                     <Image src="/image/he2b.png" width={46} height={46} className="absolute rounded-full -start-6 border border-blue-800" alt="He2b logo"/>
                     <time className="text-sm font-normal leading-none">2021 - 2025</time>
