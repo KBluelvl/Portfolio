@@ -32,6 +32,14 @@ const projects: Project[] = [
         github: "https://github.com/KBluelvl/Sokoban",
         website: "https://kbluelvl.github.io/Sokoban",
         tags: ["JavaScript", "HTML", "CSS"],
+    },
+    {
+        id: 4,
+        title: "BMR",
+        desc: "BMR calculator made in JavaFX",
+        image: "/image/projects/BMR.png",
+        github: "https://github.com/KBluelvl/Bmr",
+        tags: ["Java", "Javafx"],
     }
 ]
 
