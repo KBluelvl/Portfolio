@@ -14,10 +14,11 @@ export async function generateMetadata({params} : {params: Params}) {
 
 export default async function tag({params}: {params: Params}) {
     const { tag } = await params
-    const filteredProjects = projects.filter((project) => project.tags.includes(tag))
+    const decodedTag = decodeURIComponent(tag);
+    const filteredProjects = projects.filter((project) => project.tags.includes(decodedTag))
     return (
          <div className="flex flex-col items-center">
-            <h1 className="text-3xl">Projects built with <b>{tag}</b></h1>
+            <h1 className="text-3xl">Projects built with <b>{decodedTag}</b></h1>
             {filteredProjects.map((project) =>{
                 return <ProjectCard key={project.id} project={project} />
             })}
