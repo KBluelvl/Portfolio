@@ -62,7 +62,7 @@ export default function Contact() {
                   onChange={(e) => setMessage(e.target.value)} 
                   className="text-sm rounded-md border mb-6 p-2"
                   placeholder="Write your message here..." />
-                <button className="rounded-md py-2" onClick={sendEmail}>
+                <button className="formButton rounded-md py-2" onClick={sendEmail}>
                     {loading ? 
                     <>
                     <svg aria-hidden="true" className="inline w-4 h-4 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
