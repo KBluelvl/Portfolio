@@ -40,9 +40,9 @@ export default function RootLayout() {
 
   return (
     <div className="themeToggle relative w-16 h-8 flex items-center cursor-pointer rounded-full p-1" onClick={toggleTheme}>
-        <FontAwesomeIcon icon={faMoon} className="themeToggle fa-fw rounded-full" />
+        <FontAwesomeIcon icon={faMoon} className="themeToggle rounded-full" />
         <div className="absolute bg-white w-6 h-6 rounded-full shadow-md transition-transform duration-300" style={darkMode ? {left:"36px"}:{}}></div>
-        <FontAwesomeIcon icon={faSun} className="themeToggle fa-fw rounded-full text-yellow-400 text-xl" />
+        <FontAwesomeIcon icon={faSun} className="themeToggle rounded-full text-yellow-400 absolute right-1" style={darkMode ? {zIndex: "-10"}:{}}/>
     </div>
   );
 }

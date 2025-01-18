@@ -12,7 +12,7 @@ export default function Header(){
                   <li className="flex items-center"><Link href="/projects" className="hover:scale-110">Projects</Link></li>
                   <li className="flex items-center"><Link href="/about" className="hover:scale-110">About</Link></li>
                   <li className="flex items-center"><Link href="/contact" className="hover:scale-110">Contact</Link></li>
-                  <li className="flex items-center">< ThemeToggle /></li>
+                  <li className="flex items-center"><ThemeToggle /></li>
                 </ul>
             </div>
           </nav>
