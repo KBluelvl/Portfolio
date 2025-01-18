@@ -30,7 +30,7 @@ export default function Home() {
               <Image src="/image/linkedin.jpg" width={45} height={45} className="rounded-full mb-5 border"  alt="Linkedin logo" />
             </Link>
             <a href="/cv/Resume Florian.pdf" className="rounded-3xl bg-gradient-to-r from-[#0454c4] to-[#53abf5] transition ease-out hover:scale-110 p-1 mb-5" download>
-              <p className="rounded-3xl max-[640px]:text-xs bg-background hover:bg-gradient-to-r from-[#0454c4] to-[#53abf5] px-3 py-2">Download CV</p>
+              <p className="rounded-3xl max-[640px]:text-[0.65rem] bg-background hover:bg-gradient-to-r from-[#0454c4] to-[#53abf5] px-3 py-2">Download CV</p>
             </a>
           </div>
           <Skills />
