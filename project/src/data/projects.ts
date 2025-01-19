@@ -21,6 +21,7 @@ const projects: Project[] = [
         id: 2,
         title: "Chess",
         desc: "A chess game in java.",
+        video: "/Chess.mp4",
         github: "https://github.com/KBluelvl/Chess",
         tags: ["Java", "JavaFX"],
     },

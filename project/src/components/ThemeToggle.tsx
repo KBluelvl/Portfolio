@@ -11,21 +11,21 @@ export default function RootLayout() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-      // Vérifier la préférence du système si rien n'est enregistré
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      if (prefersDark) {
-        document.documentElement.classList.add("dark");
-        document.documentElement.classList.remove("light");
-        setDarkMode(true);
-      } else {
-        document.documentElement.classList.remove("dark");
-        document.documentElement.classList.add("light");
-        setDarkMode(false);
-      }
-      setMounted(true);
-    }, []);
+    // Vérifier la préférence du système si rien n'est enregistré
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (prefersDark) {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+      setDarkMode(true);
+    } else {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.add("light");
+      setDarkMode(false);
+    }
+    setMounted(true);
+  }, []);
 
-    if (!mounted) return <button disabled>Chargement...</button>;
+  if (!mounted) return <button disabled>Chargement...</button>;
 
   const toggleTheme = () => {
     if (!darkMode) {

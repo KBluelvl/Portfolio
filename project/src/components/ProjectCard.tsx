@@ -16,7 +16,7 @@ export default function ProjectCard({project}: ProjectCardType) {
                         height="298" 
                         className="rounded transition ease-out hover:scale-110"
                         alt={project.title} />
-                    : <AutoPlayVideo />
+                    : <AutoPlayVideo video={project.video!} />
                 }
                 <h1 className="text-4xl font-bold">{project.title}</h1>
                 <div className="flex space-x-2">
@@ -42,7 +42,7 @@ export default function ProjectCard({project}: ProjectCardType) {
                             <FontAwesomeIcon icon={faGlobe} className="fa-fw" />
                         </div>
                         </Link>
-                    :null}
+                    :null }
                 </div>
                 <p className="descriptionText text-center">{project.desc}</p>
             </div>

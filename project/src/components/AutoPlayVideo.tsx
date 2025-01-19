@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 
-const AutoPlayVideo: React.FC = () => {
+const AutoPlayVideo: React.FC<{ video: string }> = ({video}) => {
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
@@ -55,7 +55,7 @@ const AutoPlayVideo: React.FC = () => {
     <div>
       <video
         ref={videoRef}
-        src="/Chess.mp4"
+        src={video}
         width={597}
         height={298}
         muted
