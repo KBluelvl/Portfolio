@@ -41,7 +41,7 @@ export default function RootLayout() {
   return (
     <div className="themeToggle relative w-16 h-8 flex items-center cursor-pointer rounded-full p-1" onClick={toggleTheme}>
         <FontAwesomeIcon icon={faMoon} className="themeToggle rounded-full" />
-        <div className="absolute bg-white w-6 h-6 rounded-full shadow-md transition-transform duration-300" style={darkMode ? {left:"36px"}:{}}></div>
+        <div className="absolute bg-white w-6 h-6 rounded-full shadow-md transition-transform duration-300 z-10" style={{ transform: darkMode ? "translateX(30px)" : "translateX(0)" }}></div>
         <FontAwesomeIcon icon={faSun} className="themeToggle rounded-full text-yellow-400 absolute right-1" style={darkMode ? {zIndex: "-10"}:{}}/>
     </div>
   );
