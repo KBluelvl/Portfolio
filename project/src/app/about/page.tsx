@@ -6,7 +6,7 @@ export default function AboutPage() {
             <br />
             I enjoy working on projects in my free time to deepen my knowledge of programming and explore new concepts.
             <br />
-            I&apos;m currently in a end of study internship in developpement at NTT Data.
+            I just graduated from Application developpement.
         </p>
     </>)
 }

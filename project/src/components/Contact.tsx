@@ -32,8 +32,7 @@ export default function Contact() {
             <div className="flex flex-col">
                 <h1 className="text-3xl font-bold">Contact me !</h1>
                 <p className="descriptionText max-w-lg mb-4">
-                    I&apos;m currently looking for an end-of-study internship to complete my bachelor&apos;s degree in Computer
-                    Science at HE2B ESI. The internship would run for at least 15 weeks, from February to May. If you 
+                    I&apos;m currently looking for a job opportunities. If you 
                     know of any <b>opportunities</b> or have any questions, feel free to reach out! I&apos;m always happy to connect 
                     and will do my best to respond quickly!
                 </p>
